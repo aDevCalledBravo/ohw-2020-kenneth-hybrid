@@ -1,0 +1,289 @@
+/*Universal Styling.*/
+
+:root {
+    --green: #1f8b55;
+    --yellow: #f4e858;
+}
+
+* {
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	margin: 0;
+}
+
+colored-dot { /*Found in the h1 of the first section.*/
+	color: var(--yellow);
+	font-size: 100%;
+}
+
+/*Individual Body Styling begins....*/
+
+nav {
+	padding: 2% 5% 0;
+	background-color: #f0f0f0;
+	overflow: hidden;
+	color: var(--green);
+}
+
+nav img {
+	float: left;
+	padding: 0 20% 0 0;
+}
+
+nav h3 {
+	display: inline-block;
+	padding: 0 2.5% 0 0; 
+}
+nav .contact-icons {
+	overflow: hidden;
+	border-bottom: 0.2em solid var(--yellow);
+	margin: 0 0 0 45%;
+}
+nav .social-media-icons {
+	float: right;
+	display: flex;
+	margin: 3% 6% 0 0;
+}
+nav .social-media-icons a{
+	cursor: pointer;
+	color: var(--green);
+	flex: 25%;
+	padding: 0 10%;
+}
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	flex: 16.67%;
+	padding: 0 5% 0 -5%;
+	margin: 2% 0 0 0;
+} 
+nav ul li a {
+	color: var(--green);
+	font-weight: 600;
+}
+
+nav ul li a:active, nav ul li a:hover {
+	font-weight: 800;
+}
+
+nav button {
+	color: white;
+	width: 100%;
+	height: 2.5em;
+	background-color: var(--green);
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 600;
+	margin: -8% 0 0 0;
+}
+
+.first {
+	padding: 0 5% 5%;
+	overflow: hidden;
+}
+
+.first h1 {
+	font-weight: 800;
+	font-size: 250%; 
+	margin: 20% 50% 0 0;
+	color: var(--green);
+}
+
+.first img {
+	float: right;
+}
+
+
+.form-area {
+	margin: 0 5%;
+	padding: 5% 10%;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+.form-area h1 {
+	font-size: 120%;
+}
+button {
+	color: white;
+	width: 10%;
+	height: 2.5em;
+	background-color: var(--green);
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 600;
+}
+.amount-buttons {
+	display: flex;
+}
+.amount-buttons button {
+	flex: 25%;
+	margin: 0 5%;
+}
+
+form {
+	text-align: left;
+	padding: 5% 5% 0;
+}
+label {
+	font-weight: bold;
+	font-size: 70%;
+	cursor: pointer;
+}
+input {
+	border:none;
+	border-bottom: 2px solid black;
+	background-color: #f0f0f0;
+	width: 80%;
+	outline: none;
+}
+::placeholder {
+	color: gray;
+	font-size: 80%;
+	font-weight: 600;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.flex {
+	display: flex;
+}
+.flex div {
+	flex: 33.33%;
+}
+.flex div:nth-child(1) input {
+	width: 15%;
+}
+.flex div:nth-child(2) input {
+	width: 25%;
+}
+.flex div:nth-child(3) input {
+	width: 20%;
+}
+
+form button {
+	margin: 5% 0 0 35%;
+}
+
+@media (max-width: 800px) {
+
+	.mobile {
+		position: fixed;
+		z-index: 4;
+		right: 0;
+		display: grid;
+		place-items:center;
+		height: 100%;
+		width: 0;
+		background-color: black;
+		padding: 0;
+		transition: 0.5s ease;
+	}
+	.mobile #close-menu {
+		color: var(--yellow);
+		font-size: 300%;
+		cursor: pointer;
+		float: right;
+	}
+	.mobile .contact-icons {
+		margin: 0;
+		margin-top: -40%;
+		margin-left: 300%;
+		padding: 0 5%;
+		text-align: center;
+	}
+	.mobile .social-media-icons {
+		float: none;
+	}
+	.mobile ul {
+		display: block;
+		margin: 0;
+		margin-top: -45%;
+		margin-left: 200%;
+	}
+	.mobile ul li {
+		padding: 10% 0;
+		font-size: 100%;
+	}
+	.mobile ul button {
+		width: 160%;
+		margin:0 0 0 -30%;
+	}
+	nav i#menu-icon {
+		color: var(--green);
+		font-size: 200%;
+		float: right;
+		margin: 5% 0 0 0;
+		cursor: pointer;
+		display: block;
+	}
+
+	nav img {
+		padding: 0;
+	}
+	nav ul {
+		margin: 6% 0 0 0;
+		padding: 0 0 2% 0;
+	}
+	
+	.first img {
+		float: none;
+		margin: 0 0 0 10%;
+		width: 85%;
+	}
+	.first h1 {
+		margin: 0 25%;
+		font-size: 140%;
+		text-align: center;
+	}
+	.form-area,form,input {
+		background: none;
+	}
+	.form-area {
+		margin: 0;
+		padding: 0 0 0 0;
+	}
+	label, ::placeholder {
+		font-size: 100%;
+	}
+	label {
+		margin: 0 0 5% 0;
+	}
+	input {
+		width: 100%;
+	}
+	.flex div:nth-child(1) input{
+		width: 35%;
+	}
+	.flex div:nth-child(2) input{
+		width: 50%;
+	}
+	.flex div:nth-child(3) input {
+		width: 50%;
+	}
+	form button {
+		width: 30%;
+		margin-bottom: 5%;
+	}
+}

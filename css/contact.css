@@ -1,0 +1,246 @@
+/*Universal Styling.*/
+
+:root {
+    --green: #1f8b55;
+    --yellow: #f4e858;
+}
+
+* {
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+body {
+	margin: 0;
+}
+
+colored-dot { /*Found in the h1 of the first section.*/
+	color: var(--yellow);
+	font-size: 100%;
+}
+
+/*Individual Body Styling begins....*/
+
+nav {
+	padding: 2% 5% 0;
+	background-color: #f0f0f0;
+	overflow: hidden;
+	color: var(--green);
+}
+
+nav img {
+	float: left;
+	padding: 0 20% 0 0;
+}
+
+nav h3 {
+	display: inline-block;
+	padding: 0 2.5% 0 0; 
+}
+nav .contact-icons {
+	overflow: hidden;
+	border-bottom: 0.2em solid var(--yellow);
+	margin: 0 0 0 45%;
+}
+nav .social-media-icons {
+	float: right;
+	display: flex;
+	margin: 3% 6% 0 0;
+}
+nav .social-media-icons a{
+	cursor: pointer;
+	color: var(--green);
+	flex: 25%;
+	padding: 0 10%;
+}
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	flex: 16.67%;
+	padding: 0 5% 0 -5%;
+	margin: 2% 0 0 0;
+} 
+nav ul li a {
+	color: var(--green);
+	font-weight: 600;
+}
+
+nav ul li a:active, nav ul li a:hover {
+	font-weight: 800;
+}
+
+nav button {
+	color: white;
+	width: 100%;
+	height: 2.5em;
+	background-color: var(--green);
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 600;
+	margin: -8% 0 0 0;
+}
+
+.first img {
+	width: 100%;
+}
+
+
+.contact{
+	margin: 0;
+	padding: 0 5% 5%;
+	overflow: hidden;
+	text-align: center;
+}
+.contact h1 {
+	color: var(--green);
+	font-size: 180%;
+}
+.contact .flex {
+	display: flex;
+}
+
+.contact .flex div {
+	flex: 50%;
+}
+.contact .flex .left {
+	width:584px;
+	height: 584px;
+	background-image: url('../home-img/contact-img-left-bg.png');
+	background-size: 100%;
+}
+.contact .flex .left h1 {
+	margin: 40% 0 0 0;
+	font-size: 200%;
+	color: black;
+}
+.contact .flex .left a {
+	color: var(--green);
+	padding: 0 5%;
+}
+.contact .flex .right {
+	padding: 0 5% 5% 5%;
+	text-align: left;
+	background-color: #fafafa;
+}
+.contact .flex .right h1 {
+	font-size: 200%;
+	margin: 10% 0 0 0;
+	color: black;
+}
+.contact .flex .right h3 {
+	margin: 0 0 5% 0;
+}
+.contact .flex .right input {
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	height: 3em;
+	background-color: #f0f0f0;
+	padding: 0 0 0 2%;
+}
+.contact .flex .right input[name="message"] {
+	height: 10em;
+}
+.contact .flex .right button {
+	background-color: var(--green);
+	color: white;
+	width: 30%;
+	border-radius: 5px;
+	height: 3em;
+	cursor: pointer;	
+	font-size: 80%;
+	font-weight: 600;
+	margin: 0 0 0 35%;
+}
+
+@media (max-width: 800px) {
+	.mobile {
+		position: fixed;
+		z-index: 4;
+		right: 0;
+		display: grid;
+		place-items:center;
+		height: 100%;
+		width: 0;
+		background-color: black;
+		padding: 0;
+		transition: 0.5s ease;
+	}
+	.mobile #close-menu {
+		color: var(--yellow);
+		font-size: 300%;
+		cursor: pointer;
+		float: right;
+	}
+	.mobile .contact-icons {
+		margin: 0;
+		margin-top: -40%;
+		margin-left: 300%;
+		padding: 0 5%;
+		text-align: center;
+	}
+	.mobile .social-media-icons {
+		float: none;
+	}
+	.mobile ul {
+		display: block;
+		margin: 0;
+		margin-top: -45%;
+		margin-left: 200%;
+	}
+	.mobile ul li {
+		padding: 10% 0;
+		font-size: 100%;
+	}
+	.mobile ul button {
+		width: 160%;
+		margin:0 0 0 -30%;
+	}
+	nav i#menu-icon {
+		color: var(--green);
+		font-size: 200%;
+		float: right;
+		margin: 5% 0 0 0;
+		cursor: pointer;
+		display: block;
+	}
+
+	nav img {
+		padding: 0;
+	}
+	nav ul {
+		margin: 6% 0 0 0;
+		padding: 0 0 2% 0;
+	}
+	.contact h1 {
+		font-size: 160%;
+	}
+	.contact {
+		padding: 0;
+	}
+	.contact .flex{
+		display: block;
+	}
+	.contact .flex .left {
+		display: none;
+	}
+	.contact .flex .right {
+		flex: none;
+		padding: 2% 5%;
+	}
+	.contact .flex .right button {
+		width: 40%;
+		margin-left: 30%;
+	}
+}
