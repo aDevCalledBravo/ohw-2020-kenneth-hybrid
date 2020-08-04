@@ -7,6 +7,45 @@
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+    <nav>
+        <img src="assets/images/KHFNavLogo.png" alt=""> 
+        <div class="contactnav">
+            <i class="fas fa-envelope-open-text"></i><span><a href="mailto: helpkennethhf@gmail.com">helpkennethhf@gmail.com</a></span>
+            <i class="fas fa-phone-alt"></i><span><a href="tel: +222-234-0413">+222-234-0413</a></span>
+        </div>
+        <div class="hl">
+            <svg width="831" height="3" viewBox="0 0 831 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="831" height="3" rx="1.5" fill="#F6ED7D" fill-opacity="0.4"/>
+                </svg>                
+        </div>
+        <div class="navLinks">
+           <p><a href="#">Home</a></p>
+           <p><a href="#" id="active">About</a></p>
+           <p><a href="#">Services</a></p>
+           <p><a href="#">Gallery</a></p>
+           <p><a href="#">Contact</a></p>
+           <p><a href="#">Donate</a></p>
+        </div>
+        
+    </nav>
+    <div class="mobilenavbar">
+        <img src="assets/images/KHFNavLogo.png" alt=""> 
+        <div id="hamburger" onclick="clickOn()">
+                <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="34" height="6" rx="3" fill="#017D3F"/>
+                    <rect y="9" width="34" height="6" rx="3" fill="#017D3F"/>
+                    <rect y="18" width="34" height="6" rx="3" fill="#017D3F"/>
+                    </svg>        
+        </div>            
+        <div class="dropdown-content">
+            <p><a href="#">Home</a></p>
+           <p><a href="#" id="active">About</a></p>
+           <p><a href="#">Services</a></p>
+           <p><a href="#">Gallery</a></p>
+           <p><a href="#">Contact</a></p>
+           <p><a href="#">Donate</a></p>
+        </div>
+    </div>
     <header id="serviceHeader">
         <h1>
             We have completely changed the services renderd by agriculture. We offer the best of services and products.
@@ -21,11 +60,6 @@
         </a><span>Watch Video</span>
         </div>
         
-        <div id="numLink">
-        <a href="#" class="num1">01</a>
-        <a href="#" class="num2">02</a>
-        <a href="#" class="num3">03</a>
-    </div>
     </header>
     <section id="servicesection2">
         <div class="servicehead">
@@ -151,5 +185,13 @@
         
     </footer>
 </body>
+<script>
+    var icon = document.getElementById("hamburger");
+    
+    function clickOn(){
+        var nav = document.querySelector(".dropdown-content");
+        nav.classList.toggle("open");
+    };
+</script>
 <script src="https://kit.fontawesome.com/dc7f1f050e.js" crossorigin="anonymous"></script>
 </html>
