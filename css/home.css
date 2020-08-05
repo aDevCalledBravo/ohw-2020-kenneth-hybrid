@@ -43,6 +43,9 @@ nav img {
 nav i#menu-icon {
 	display: none;
 }
+nav #close-menu {
+	display: none;
+}
 nav h3 {
 	display: inline-block;
 	padding: 0 2.5% 0 0; 
@@ -463,7 +466,9 @@ nav button {
 		cursor: pointer;
 		display: block;
 	}
-
+	nav #close-menu {
+		display: block;
+	}
 	nav img {
 		padding: 0;
 	}

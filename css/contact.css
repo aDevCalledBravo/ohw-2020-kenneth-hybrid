@@ -40,15 +40,21 @@ nav img {
 	float: left;
 	padding: 0 20% 0 0;
 }
-
+nav i#menu-icon {
+	display: none;
+}
+nav #close-menu {
+	display: none;
+}
 nav h3 {
 	display: inline-block;
 	padding: 0 2.5% 0 0; 
+	cursor: pointer;
 }
 nav .contact-icons {
 	overflow: hidden;
-	border-bottom: 0.2em solid var(--yellow);
 	margin: 0 0 0 45%;
+	border-bottom: 0.2em solid var(--yellow);
 }
 nav .social-media-icons {
 	float: right;
@@ -72,7 +78,7 @@ nav ul li {
 } 
 nav ul li a {
 	color: var(--green);
-	font-weight: 600;
+	font-weight: bold;
 }
 
 nav ul li a:active, nav ul li a:hover {
@@ -165,7 +171,7 @@ nav button {
 }
 
 @media (max-width: 800px) {
-	.mobile {
+.mobile {
 		position: fixed;
 		z-index: 4;
 		right: 0;
@@ -215,7 +221,9 @@ nav button {
 		cursor: pointer;
 		display: block;
 	}
-
+	nav #close-menu {
+		display: block;
+	}
 	nav img {
 		padding: 0;
 	}
