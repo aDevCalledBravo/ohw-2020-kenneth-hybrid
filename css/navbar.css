@@ -68,21 +68,22 @@ nav button {
 
 @media (max-width: 800px) {
 	nav img {
+		width: 50%;
 		padding-right: 100%;
 	}
 	nav span#menu-icon {
 		display: block;
-		position: fixed;
+		position: absolute;
 		z-index: 1;
-		right: 0;
-		top: 5%;
+		right: 0.2em;
+		top: 2%;
 		font-size: 200%;
 	}
 	nav a#close-menu {/*still remains display:none; will be changed with javascript.*/
-		position: fixed;
+		position: absolute;
 		z-index: 1;
-		right: 0;
-		top: 5%;
+		right: 0.2em;
+		top: 2%;
 		font-size: 200%;
 		color: var(--green);
 	}
