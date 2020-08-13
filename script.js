@@ -1,14 +1,14 @@
-    AOS.init();
+    AOS.init(); /*Refers to the Animate on Scroll Library for homepage*/
 
 
     function openNav() {
-    	document.getElementById("mobile").style.width = "100%";
-    	document.getElementById("contact-icons").style.marginLeft = "0";
-    	document.getElementById("navUl").style.marginLeft = "0";
+        document.getElementById("menu-icon").style.display = "none";
+    	document.getElementById("close-menu").style.display = "block";
+        document.getElementById("navUl").style.display = "grid";
     }
 
     function closeNav() {
-    	document.getElementById("mobile").style.width = "0";
-    	document.getElementById("contact-icons").style.marginLeft = "300%";
-    	document.getElementById("navUl").style.marginLeft = "200%";
+    	document.getElementById("menu-icon").style.display = "block";
+        document.getElementById("close-menu").style.display = "none";
+        document.getElementById("navUl").style.display = "none";
     }
