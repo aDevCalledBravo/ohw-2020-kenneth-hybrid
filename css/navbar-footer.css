@@ -1,0 +1,180 @@
+nav {
+	padding: 2% 5% 0;
+	background-color: #f0f0f0;
+	overflow: hidden;
+	color: var(--green);
+}
+
+nav img {
+	float: left;
+	padding: 0 20% 0 0;
+}
+nav span#menu-icon {
+	display: none;
+}
+nav a#close-menu {
+	display: none;
+}
+nav h3 {
+	display: inline-block;
+	padding: 0 2.5% 0 0; 
+	cursor: pointer;
+}
+nav .contact-icons {
+	overflow: hidden;
+	margin: 0 0 0 45%;
+	border-bottom: 0.2em solid var(--yellow);
+}
+nav .social-media-icons {
+	float: right;
+	display: flex;
+	margin: 3% 6% 0 0;
+}
+nav .social-media-icons a{
+	cursor: pointer;
+	color: var(--green);
+	flex: 25%;
+	padding: 0 10%;
+}
+nav ul {
+	display: flex;
+}
+
+nav ul li {
+	flex: 16.67%;
+	padding: 0 5% 0 -5%;
+	margin: 2% 0 0 0;
+} 
+nav ul li a {
+	color: var(--green);
+	font-weight: bold;
+}
+
+nav ul li a:active, nav ul li a:hover {
+	font-weight: 800;
+}
+
+nav button {
+	color: white;
+	width: 100%;
+	height: 2.5em;
+	background-color: var(--green);
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: 600;
+	margin: -8% 0 0 0;
+}
+
+footer {
+	padding: 10% 5% 5%;
+	margin: 2% 0 0 0;
+	color: white;
+	background-color: var(--green);
+	overflow: hidden;
+}
+
+footer section.flex{
+	display: flex;
+}
+
+footer .flex .column {
+	flex: 25%;
+}
+footer .flex .column-one h2 {
+	font-size: 120%;
+	font-weight: 100;
+	letter-spacing: 0.2em;
+}
+footer .flex .column-one p {
+	font-size: 90%;
+}
+footer .flex .column-one a i {
+	color: white;
+	padding: 0 10%;
+}
+footer .flex .column-one a i:nth-child(1) {
+	padding-left: 0;
+}
+footer .flex .column h1 {
+	font-size: 150%;
+}
+footer .flex .column-two,
+footer .flex .column-three,
+footer .flex .column-four {
+	padding: 9% 0 0 5%;
+}
+footer .flex .column ul {
+	padding: 0;
+}
+footer .flex .column h1 {
+	cursor: pointer;
+}
+footer .flex .column ul li {
+	font-weight: bold;
+}
+
+
+
+@media (max-width: 800px) {
+	nav img {
+		width: 50%;
+		padding-right: 100%;
+	}
+	nav span#menu-icon {
+		display: block;
+		position: absolute;
+		z-index: 1;
+		right: 0.2em;
+		top: 2%;
+		font-size: 200%;
+	}
+	nav a#close-menu {/*still remains display:none; will be changed with javascript.*/
+		position: absolute;
+		z-index: 1;
+		right: 0.2em;
+		top: 2%;
+		font-size: 200%;
+		color: var(--green);
+	}
+	nav div.contact-icons {
+		display:none;
+	}	
+	nav ul {
+		display: none;
+		/*display: grid;*/ /*(the display:grid is activated with javascript)*/
+		place-items:center;
+	}
+	nav ul li {
+		display: block;
+	}
+
+	footer section.flex{
+		display: block;
+	}
+	footer .flex .column-one {
+		text-align: center;
+	}
+	footer .flex .column-one h1 {
+		font-size: 140%;
+		margin-bottom: 0;
+	}
+	footer .flex .column-one h2 {
+		margin: 0;
+		font-size: 100%;
+	}
+	footer .flex .column-one p {
+		display: none;
+	}
+	footer .flex .column-one a i {
+		padding: 2% 5%;
+	}
+	footer .flex .column-two,
+	footer .flex .column-four { 
+		float: left;
+		width: 50%;
+	}
+	footer .flex .column-four {
+		width: 100%;
+	}
+}
