@@ -65,7 +65,9 @@ nav button {
 	font-weight: 600;
 	margin: -8% 0 0 0;
 }
-
+nav ul li#mobile-donate {
+	display: none;
+}
 footer {
 	padding: 10% 5% 5%;
 	margin: 2% 0 0 0;
@@ -148,7 +150,16 @@ footer .flex .column ul li {
 	nav ul li {
 		display: block;
 	}
-
+	nav ul li a {
+		font-weight: 100;
+	}
+	nav button {
+		display: none;
+	}
+	nav ul li#mobile-donate {
+		display: block;
+		margin-top: -1%;
+	}
 	footer section.flex{
 		display: block;
 	}
@@ -176,5 +187,8 @@ footer .flex .column ul li {
 	}
 	footer .flex .column-four {
 		width: 100%;
+	}
+	footer .flex .column-two ul li:nth-child(2) { /*Captures the text: "Mission Statement"*/
+		font-size: 95%;
 	}
 }
